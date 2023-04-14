@@ -1,0 +1,24 @@
+# ss-local to Clash
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: 127.0.0.1:9090
+
+proxies:
+  - name: "教学楼10M"
+    type: ss
+    server: 172.26.143.160
+    port: 8388
+    cipher: aes-256-cfb
+    password: 1234567890
+    udp: true
+
+  - name: "宿舍区20M"
+    type: ss
+    server: 172.29.14.144
+    port: 8388
+    cipher: aes-256-cfb
+    password: 1234567890
+    udp: true
