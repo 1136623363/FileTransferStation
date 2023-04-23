@@ -1,0 +1,31 @@
+dnsconf:
+    - ipv4:
+        enable: false
+        gettype: url
+        url: https://myip4.ipip.net, https://ddns.oray.com/checkip, https://ip.3322.net
+        netinterface: ""
+        cmd: ""
+        domains:
+            - ""
+      ipv6:
+        enable: true
+        gettype: url
+        url: https://myip6.ipip.net, https://speed.neu6.edu.cn/getIP.php, https://v6.ident.me
+        netinterface: ""
+        cmd: ""
+        ipv6reg: ""
+        domains:
+            - liangszu.site
+      dns:
+        name: dnspod
+        id: "405444"
+        secret: b30e756b9ba1dbf99513b14e572cdc2a
+      ttl: ""
+user:
+    username: ""
+    password: ""
+webhook:
+    webhookdisable: false
+    webhookurl: ""
+    webhookrequestbody: ""
+notallowwanaccess: true
